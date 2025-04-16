@@ -8,10 +8,10 @@ return {
     'marilari88/neotest-vitest',
   },
   config = function()
-    local neotest = require 'neotest'
+    local neotest = require('neotest')
 
     local function find_nearest_node_modules_dir()
-      local current_dir = vim.fn.expand '%:p:h' -- current buffer dir
+      local current_dir = vim.fn.expand('%:p:h') -- current buffer dir
       while current_dir ~= '/' do
         if vim.fn.isdirectory(current_dir .. '/node_modules') == 1 then
           return current_dir
@@ -27,22 +27,22 @@ return {
       return node_modules_dir or original_cwd
     end
 
-    neotest.setup {
+    neotest.setup({
       adapters = {
-        require 'neotest-vitest' {
+        require('neotest-vitest')({
           cwd = get_root_dir,
           filter_dir = function(name, rel_path, root)
             return name ~= 'node_modules'
           end,
-        },
+        }),
       },
-    }
+    })
   end,
   keys = {
     {
       '<leader>tt',
       function()
-        require('neotest').run.run(vim.fn.expand '%')
+        require('neotest').run.run(vim.fn.expand('%'))
       end,
       desc = 'Run File (Neotest)',
     },
@@ -77,7 +77,7 @@ return {
     {
       '<leader>to',
       function()
-        require('neotest').output.open { enter = true, auto_close = true }
+        require('neotest').output.open({ enter = true, auto_close = true })
       end,
       desc = 'Show Output (Neotest)',
     },
@@ -98,7 +98,7 @@ return {
     {
       '<leader>tw',
       function()
-        require('neotest').watch.toggle(vim.fn.expand '%')
+        require('neotest').watch.toggle(vim.fn.expand('%'))
       end,
       desc = 'Toggle Watch (Neotest)',
     },

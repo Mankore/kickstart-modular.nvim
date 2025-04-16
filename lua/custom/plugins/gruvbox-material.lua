@@ -12,6 +12,6 @@ return {
     vim.g.gruvbox_material_transparent_background = 0
     vim.g.gruvbox_material_float_style = 'dim'
     vim.g.gruvbox_material_ui_contrast = 'hard'
-    vim.cmd.colorscheme 'gruvbox-material'
+    vim.cmd.colorscheme('gruvbox-material')
   end,
 }
