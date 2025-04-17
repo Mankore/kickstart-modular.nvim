@@ -5,11 +5,11 @@ return {
       name = 'catppuccin',
       priority = 1000,
       config = function()
-        require('catppuccin').setup {
+        require('catppuccin').setup({
           flavour = 'macchiato', -- latte, frappe, macchiato, mocha
           transparent_background = false,
           term_colors = false,
-        }
+        })
 
         -- vim.cmd.colorscheme 'catppuccin'
       end,
@@ -39,7 +39,7 @@ return {
         vim.g.gruvbox_material_transparent_background = 0
         vim.g.gruvbox_material_float_style = 'dim'
         vim.g.gruvbox_material_ui_contrast = 'hard'
-        vim.cmd.colorscheme 'gruvbox-material'
+        vim.cmd.colorscheme('gruvbox-material')
       end,
     },
   },
