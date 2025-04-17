@@ -5,6 +5,7 @@ return {
     dependencies = {
       'nvim-telescope/telescope.nvim',
     },
+    lazy = false,
 
     opts = {
       -- See below for config options
