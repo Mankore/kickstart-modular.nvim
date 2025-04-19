@@ -12,6 +12,7 @@ return {
   require('custom.plugins.copilot'),
   require('custom.plugins.copilot-chat'),
   require('custom.plugins.trouble'),
+  require('custom.plugins.mini'),
   -- require 'custom.plugins.codeium',
   -- require 'custom.plugins.noice',
 }
