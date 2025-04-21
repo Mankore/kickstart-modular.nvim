@@ -14,6 +14,7 @@ return {
   require('custom.plugins.trouble'),
   require('custom.plugins.mini'),
   require('custom.plugins.cmp'),
+  require('custom.plugins.snacks'),
   -- require 'custom.plugins.codeium',
   -- require 'custom.plugins.noice',
 }
