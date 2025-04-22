@@ -1,5 +1,18 @@
 return {
   {
+    'bluz71/vim-moonfly-colors',
+    name = 'moonfly',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      -- vim.g.moonflyCursorColor = true
+      vim.g.moonflyTransparent = true
+      vim.g.moonflyNormalFloat = true
+
+      vim.cmd.colorscheme('moonfly')
+    end,
+  },
+  {
     'catppuccin/nvim',
     name = 'catppuccin',
     priority = 1000,
@@ -35,7 +48,7 @@ return {
       vim.g.gruvbox_material_float_style = 'dim'
       vim.g.gruvbox_material_ui_contrast = 'hard'
 
-      vim.cmd.colorscheme('gruvbox-material')
+      -- vim.cmd.colorscheme('gruvbox-material')
     end,
   },
 }

@@ -9,7 +9,8 @@ return {
 
     require('lualine').setup({
       options = {
-        theme = 'codedark',
+        -- theme = 'codedark',
+        theme = 'moonfly',
       },
       sections = {
         lualine_x = { getTime, 'encoding', 'fileformat', 'filetype' },
