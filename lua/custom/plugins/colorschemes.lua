@@ -6,7 +6,7 @@ return {
     priority = 1000,
     config = function()
       -- vim.g.moonflyCursorColor = true
-      vim.g.moonflyTransparent = true
+      vim.g.moonflyTransparent = false
       vim.g.moonflyNormalFloat = true
 
       vim.cmd.colorscheme('moonfly')
