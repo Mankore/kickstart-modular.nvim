@@ -17,6 +17,7 @@ return {
   require('custom.plugins.cmp'),
   require('custom.plugins.snacks'),
   require('custom.plugins.avante'),
+  require('custom.plugins.auto-session'),
   -- require 'custom.plugins.codeium',
   -- require 'custom.plugins.noice',
 }

@@ -19,7 +19,7 @@ return {
 
       require('mini.move').setup()
 
-      require('mini.sessions').setup()
+      -- require('mini.sessions').setup()
 
       -- Simple and easy statusline.
       --  You could remove this setup call if you don't like it,
