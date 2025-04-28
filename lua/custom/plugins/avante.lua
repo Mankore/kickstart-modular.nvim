@@ -6,7 +6,8 @@ return {
     provider = 'copilot',
     auto_suggestions_provider = nil,
   },
-  build = 'powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false', -- for windows
+  -- build = 'powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false', -- for windows
+  build = 'make',
   dependencies = {
     'nvim-treesitter/nvim-treesitter',
     'stevearc/dressing.nvim',
