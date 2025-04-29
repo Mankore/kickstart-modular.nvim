@@ -18,6 +18,7 @@ return {
   require('custom.plugins.snacks'),
   require('custom.plugins.avante'),
   require('custom.plugins.auto-session'),
+  -- require('custom.plugins.typescript-tools'),
   -- require 'custom.plugins.codeium',
   -- require 'custom.plugins.noice',
 }

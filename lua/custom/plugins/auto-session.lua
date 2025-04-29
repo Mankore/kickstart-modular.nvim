@@ -2,6 +2,7 @@ return {
   'rmagatti/auto-session',
   lazy = false,
   opts = {
+    auto_save = false,
     suppressed_dirs = nil,
   },
   keys = {
