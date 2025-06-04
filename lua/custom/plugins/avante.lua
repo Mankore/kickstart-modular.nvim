@@ -4,10 +4,15 @@ return {
   version = false, -- Never set this value to "*"! Never!
   opts = {
     provider = 'copilot',
+    providers = {
+      copilot = {
+        model = 'claude-3.5-sonnet',
+      },
+    },
     auto_suggestions_provider = nil,
   },
-  -- build = 'powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false', -- for windows
-  build = 'make',
+  build = 'powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false', -- for windows
+  -- build = 'make',
   dependencies = {
     'nvim-treesitter/nvim-treesitter',
     'stevearc/dressing.nvim',
