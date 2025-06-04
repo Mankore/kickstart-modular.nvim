@@ -23,4 +23,5 @@ return {
   -- require('custom.plugins.typescript-tools'),
   -- require 'custom.plugins.codeium',
   -- require 'custom.plugins.noice',
+  -- require('custom.plugins.code-companion'),
 }
