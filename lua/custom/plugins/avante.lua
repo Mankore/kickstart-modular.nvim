@@ -6,7 +6,7 @@ return {
     provider = 'copilot',
     providers = {
       copilot = {
-        model = 'claude-3.5-sonnet',
+        model = 'claude-4-sonnet',
       },
     },
     auto_suggestions_provider = nil,
