@@ -6,13 +6,26 @@ return {
     provider = 'copilot',
     providers = {
       copilot = {
-        model = 'claude-3.5-sonnet',
+        model = 'gpt-4.1',
       },
     },
     auto_suggestions_provider = nil,
+    -- MCPHub integration
+    -- system_prompt as function ensures LLM always has latest MCP server state
+    -- This is evaluated for every message, even in existing chats
+    system_prompt = function()
+      local hub = require('mcphub').get_hub_instance()
+      return hub and hub:get_active_servers_prompt() or ''
+    end,
+    -- Using function prevents requiring mcphub before it's loaded
+    custom_tools = function()
+      return {
+        require('mcphub.extensions.avante').mcp_tool(),
+      }
+    end,
   },
-  build = 'powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false', -- for windows
-  -- build = 'make',
+  -- build = 'powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false', -- for windows
+  build = 'make',
   dependencies = {
     'nvim-treesitter/nvim-treesitter',
     'stevearc/dressing.nvim',

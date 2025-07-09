@@ -24,4 +24,5 @@ return {
   -- require 'custom.plugins.codeium',
   -- require 'custom.plugins.noice',
   -- require('custom.plugins.code-companion'),
+  require('custom.plugins.mcphub'),
 }
