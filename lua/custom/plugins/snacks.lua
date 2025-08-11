@@ -11,10 +11,15 @@ return {
     explorer = {
       replace_netrw = true, -- Replace netrw with the snacks explorer
     },
+    files = {
+      hidden = true,
+      ignored = true,
+    },
     lazygit = {},
     picker = {
       sources = {
         explorer = {
+          auto_close = true,
           layout = { layout = { position = 'right' } },
         },
       },
