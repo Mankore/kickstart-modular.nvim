@@ -25,4 +25,5 @@ return {
   -- require 'custom.plugins.noice',
   -- require('custom.plugins.code-companion'),
   require('custom.plugins.mcphub'),
+  require('custom.plugins.ts-error-translator'),
 }
